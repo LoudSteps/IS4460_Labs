@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemark Movie List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    <!-- Navigation Box -->
+    <div class="nav-box">
+        <a href="movie-login.html" class="nav-link">Login</a>
+        <a href="movie-list.html" class="nav-link">Movie List</a>
+        <a href="movie-details.html" class="nav-link">Movie Details</a>
+        <a href="movie-add.html" class="nav-link">Add Movie</a>
+        <a href="movie-update.html" class="nav-link">Update Movie</a>
+
+    </div>
+
+    <!-- Movie List -->
+    <div class="container">
+        <h2 class="text-center">Cinemark Movie List</h2>
+
+        <br>
+        <br>
+                <!--Add Movie Button -->
+            <div class="Add Movie">
+                <a href="movie-add.html" class="add-movie-btn">Add Movie</a>
+            </div>
+            <br>
+
+        <div class="movie-container">
+            <!-- Repeat the following card structure for each movie -->
+
+            <!-- Movie 1 - WALL-E -->
+            <div class="movie-card">
+                <h3 class="text-center">WALL-E</h3>
+                <img src="images/Walle.jpeg" height="300" alt="WALL-E">
+                <div class="details-box">
+                    <p>Details: WALL-E (2008): Directed by Andrew Stanton, "WALL-E" is an animated masterpiece set in a dystopian future where Earth is abandoned by humans due to pollution. The titular character, a small waste-collecting robot, inadvertently embarks on a space adventure that holds the key to humanity's survival. The film showcases Pixar's storytelling prowess, delivering a heartwarming and environmentally conscious narrative.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 2 - American Psycho -->
+            <div class="movie-card">
+                <h3 class="text-center">American Psycho</h3>
+                <img src="images/AmericanPsycho.webp" height="300" alt="American Psycho">
+                <div class="details-box">
+                    <p>Details: American Psycho (2000): Directed by Mary Harron, "American Psycho" stars Christian Bale as Patrick Bateman, a wealthy New York City investment banker with a dark and psychotic double life as a serial killer. The film explores themes of consumerism, identity, and the superficiality of the 1980s yuppie culture. Bale's chilling performance and the film's satirical take on excess and obsession have made it a cult classic.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 3 - Inside Job -->
+            <div class="movie-card">
+                <h3 class="text-center">Inside Job</h3>
+                <img src="images/InsideJob.jpeg" height="300" alt="Inside Job">
+                <div class="details-box">
+                    <p>Details: Inside Job (2010): Charles Ferguson directed this documentary that delves into the 2008 financial crisis, providing a comprehensive analysis of the events leading to the economic collapse. Featuring interviews with key figures, "Inside Job" critically examines the systemic flaws in the financial industry, shedding light on the ethical lapses that contributed to the global recession.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 4 - Marriage Story -->
+            <div class="movie-card">
+                <h3 class="text-center">Marriage Story</h3>
+                <img src="images/MarriageStory.jpg" height="300" alt="Marriage Story">
+                <div class="details-box">
+                    <p>Details: Marriage Story (2019): Directed by Noah Baumbach, "Marriage Story" stars Adam Driver and Scarlett Johansson as a couple going through a heartbreaking divorce. The film explores the complexities of relationships, legal battles, and the emotional toll of separation. With powerful performances and a nuanced portrayal of love and loss, the film earned critical acclaim for its authenticity.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 5 - Office Space -->
+            <div class="movie-card">
+                <h3 class="text-center">Office Space</h3>
+                <img src="images/OfficeSpace.jpg" height="300" alt="Office Space">
+                <div class="details-box">
+                    <p>Details: Office Space (1999): Directed by Mike Judge, "Office Space" is a satirical comedy that follows the mundane lives of office workers at Initech. The film humorously critiques corporate culture, exploring the frustrations of the white-collar workforce. Ron Livingston leads a cast of memorable characters, and the film has become a cult favorite for its relatable portrayal of workplace absurdity.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 6 - Once Upon a Time in Hollywood -->
+            <div class="movie-card">
+                <h3 class="text-center">Once Upon a Time in Hollywood</h3>
+                <img src="images/OnceUponATimeInHollywood.jpeg" height="300" alt="Once Upon a Time in Hollywood">
+                <div class="details-box">
+                    <p>Details: Once Upon a Time in Hollywood (2019): Directed by Quentin Tarantino, this star-studded film is set in 1969 Los Angeles and stars Leonardo DiCaprio and Brad Pitt. "Once Upon a Time in Hollywood" weaves multiple storylines, including the friendship between an actor and his stunt double, and intersects with the Manson Family murders. The film captures the nostalgia of Hollywood's golden age with Tarantino's signature style.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 7 - Revenge of the Sith -->
+            <div class="movie-card">
+                <h3 class="text-center">Star Wars III: Revenge of the Sith</h3>
+                <img src="images/RevengeofTheSith.jpeg" height="300" alt="Revenge of the Sith">
+                <div class="details-box">
+                    <p>Details: Revenge of the Sith (2005): Directed by George Lucas, "Star Wars: Episode III - Revenge of the Sith" is the final installment of the prequel trilogy. Starring Hayden Christensen and Ewan McGregor, the film chronicles the fall of Anakin Skywalker to the dark side, the rise of the Galactic Empire, and the birth of Darth Vader. It's an epic space opera that bridges the gap between trilogies.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 8 - Star Wars: Rogue One -->
+            <div class="movie-card">
+                <h3 class="text-center">Star Wars: Rogue One</h3>
+                <img src="images/StarWarsRougeOne.jpeg" height="300" alt="Star Wars: Rogue One">
+                <div class="details-box">
+                    <p>Details: Star Wars: Rogue One (2016): Directed by Gareth Edwards, "Rogue One: A Star Wars Story" is a standalone film in the Star Wars franchise. Starring Felicity Jones, the movie follows a group of rebels on a mission to steal the Death Star plans, setting the stage for the events of the original trilogy. With intense action and a darker tone, "Rogue One" adds depth to the Star Wars universe.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 9 - Superbad -->
+            <div class="movie-card">
+                <h3 class="text-center">Superbad</h3>
+                <img src="images/SuperBad.jpg" height="300" alt="Superbad">
+                <div class="details-box">
+                    <p>Details: Superbad (2007): Directed by Greg Mottola, "Superbad" is a coming-of-age comedy starring Jonah Hill and Michael Cera. The film follows two high school friends on a quest to have a memorable night before graduation. With its raunchy humor and heartfelt moments, "Superbad" has become a beloved teen comedy.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+
+            <!-- Movie 10 - The Big Short -->
+            <div class="movie-card">
+                <h3 class="text-center">The Big Short</h3>
+                <img src="images/TheBigShort.jpeg" height="300" alt="The Big Short">
+                <div class="details-box">
+                    <p>Details: The Big Short (2015): Directed by Adam McKay, "The Big Short" is a darkly comedic drama about the 2007-2008 financial crisis. Starring Christian Bale, Steve Carell, Ryan Gosling, and Brad Pitt, the film explores the lives of individuals who predicted the housing market collapse and profited from the economic downturn. Through clever storytelling, the movie demystifies complex financial concepts for a broader audience.</p>
+                </div>
+                <p class="text-center details-btn" onclick="toggleDetails(this)">Show Details</p>
+                <!-- View More Details Hyperlink -->
+                <div class="text-center view-details-link">
+                    <a href="movie-details.html" target="_blank">View More Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleDetails(button) {
+            var detailsBox = button.parentElement.querySelector('.details-box');
+            if (detailsBox.style.display === 'none' || detailsBox.style.display === '') {
+                detailsBox.style.display = 'block';
+                button.innerText = 'Hide Details';
+            } else {
+                detailsBox.style.display = 'none';
+                button.innerText = 'Show Details';
+            }
+        }
+    </script>
+
+    <!-- Rest of your existing content (About, Values, Services, etc.) goes here -->
+
+    <!-- Footer -->
+    <!-- Your existing Footer code goes here -->
+
+</body>
+
+</html>
+
+
+    
+
+</body>
+
+</html>

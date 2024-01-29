@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemark Movie Update</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Navigation Box -->
+  <div class="nav-box">
+    <a href="movie-login.html" class="nav-link">Login</a>
+    <a href="movie-list.html" class="nav-link">Movie List</a>
+    <a href="movie-details.html" class="nav-link">Movie Details</a>
+    <a href="movie-add.html" class="nav-link">Add Movie</a>
+    <a href="movie-update.html" class="nav-link">Update Movie</a>
+
+</div>
+
+    <!-- Movie Update Form -->
+    <div class="container">
+        <h2 class="text-center">Update Movie</h2>
+
+        <div class="form-container">
+            <form action="movie-list.html" method="post">
+                <!-- List Box for Movies -->
+                <div class="list-box-container">
+                    <label for="movieList">Select Movie:</label>
+                    <select class="list-box" id="movieList">
+                        <option value="WALL-E">WALL-E</option>
+                        <option value="AmericanPsycho">American Psycho</option>
+                        <option value="InsideJob">Inside Job</option>
+                        <option value="MarriageStory">Marriage Story</option>
+                        <option value="OfficeSpace">Office Space</option>
+                        <option value="OnceUponATimeInHollywood">Once Upon a Time in Hollywood</option>
+                        <option value="RevengeofTheSith">Revenge of the Sith</option>
+                        <option value="StarWarsRogueOne">Star Wars: Rogue One</option>
+                        <option value="SuperBad">Superbad</option>
+                        <option value="TheBigShort">The Big Short</option>
+                    </select>
+
+                    <!-- List Box for Update/Delete Options -->
+                    <label for="updateDeleteOptions">Select Action:</label>
+                    <select class="list-box" id="updateDeleteOptions">
+                        <option value="update">Update</option>
+                        <option value="delete">Delete</option>
+                    </select>
+                </div>
+
+                <!-- Movie Title -->
+                <div class="form-group">
+                    <label for="movieTitle">Update Movie Title:</label>
+                    <input type="text" class="form-control" id="movieTitle" name="movieTitle" required>
+                </div>
+
+                <!-- Movie Image Classpath -->
+                <div class="form-group">
+                    <label for="imageClasspath">Update Image Classpath:</label>
+                    <input type="text" class="form-control" id="imageClasspath" name="imageClasspath" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>

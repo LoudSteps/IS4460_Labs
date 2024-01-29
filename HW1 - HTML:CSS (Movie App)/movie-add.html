@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemark Movie Add</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+      <!-- Navigation Box -->
+      <div class="nav-box">
+        <a href="movie-login.html" class="nav-link">Login</a>
+        <a href="movie-list.html" class="nav-link">Movie List</a>
+        <a href="movie-details.html" class="nav-link">Movie Details</a>
+        <a href="movie-add.html" class="nav-link">Add Movie</a>
+        <a href="movie-update.html" class="nav-link">Update Movie</a>
+
+    </div>
+    <!-- Navbar -->
+    <!-- Your existing Navbar code goes here -->
+
+    <!-- Movie Add Form -->
+    <div class="container">
+        <h2 class="text-center">Add New Movie</h2>
+
+        <div class="form-container">
+            <form action="movie-list.html" method="post">
+                <!-- Movie Title -->
+                <div class="form-group">
+                    <label for="movieTitle">Movie Title:</label>
+                    <input type="text" class="form-control" id="movieTitle" name="movieTitle" required>
+                </div>
+
+                <!-- Movie Image Classpath -->
+                <div class="form-group">xf
+                    <label for="imageClasspath">Image Classpath:</label>
+                    <input type="text" class="form-control" id="imageClasspath" name="imageClasspath" required>
+                </div>
+
+                <!-- YouTube Trailer Embed Link -->
+                <div class="form-group">
+                    <label for="trailerLink">YouTube Trailer Embed Link:</label>
+                    <input type="text" class="form-control" id="trailerLink" name="trailerLink" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+   
+
+</body>
+
+</html>
