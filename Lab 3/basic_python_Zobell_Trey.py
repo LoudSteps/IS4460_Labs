@@ -7,95 +7,96 @@ Original file is located at
     https://colab.research.google.com/drive/1oV86Ss_8REy1ToPtr2VsgU4FprJKZmoW
 """
 
-#this is a comment
-#this is a single line comment
+# Single-line comments using '#'
 
+# Print statements
 print("Hello World!")
 
+# Numeric operations
+5 + 5
 
-
-print("Hello Class!")
-
-5+5
-
-print('Chewbacca') #this is an object type string.
-print(3.4) #this is a number. Thically a float
-
-print('chewbacca is a wookie')
-
+# Variable assignment and addition
 a = 5
 b = 6
-print(a+b)
+print(a + b)
 
+# Variable reassignment
 a = 9
 A = 3
 print(a)
 print(A)
-print(a+A)
+print(a + A)
 
+# String and float variables
 student = "Chewbacca the Wookie"
 GPA = 3.7
-print(student,"has a good GPA being", GPA,"/4.0")
+print(student, "has a good GPA being", GPA, "/4.0")
 
-print("My friends name is "+student+", not Han Solo!")
-print(f"My friends name is {student}, not Han Solo.")
+# String formatting examples
+print("My friend's name is " + student + ", not Han Solo!")
+print(f"My friend's name is {student}, not Han Solo.")
 
-name= "Chewie"
-name= 1234
-number =654321 * 123456
+# String and slicing operations
+name = "Chewie"
+name = 1234
+number = 654321 * 123456
 print(number)
 print(str(number)[1:3])
 
-def add_numbers(b,c):
-  output = b + c
-  return output
+# Function definition and usage
+def add_numbers(b, c):
+    output = b + c
+    return output
 
-print(add_numbers(3,4)) #positional arguments
-print(add_numbers(b=7,c=10)) #this is a name argument
+print(add_numbers(3, 4))  # positional arguments
+print(add_numbers(b=7, c=10))  # named arguments
 
-name = "Trey" #global
+# Global and local variable examples
+name = "Trey"  # global
 
 def state_hello():
-  name = "Horton" #global
-  return f"Hello {name}"
+    name = "Horton"  # local
+    return f"Hello {name}"
 
-  print(state_hello())
+print(state_hello())
 
+# Boolean operations and comparisons
 print(f"a: {20 > 9}")
 print(f"b: {5 == 6}")
 print(f"c: {1 == 0}")
 print(f"d: {1 == 1}")
 
-#the use of boolean can be used when you have only 2 solutions, like true or false, greater than or less than, etc.
+# Boolean conversion to integers
+print("two is equal to 1:", int(2 == 1))
+print("one is equal to 1:", int(1 == 1))
 
-print("two is equal to 1:",int(2==1))
-print("one is equal to 1:",int(1==1))
-
+# Literal examples
 myname = "Trey"
 myage = 22
-print(f"a: {21}") # numeric literal
-print(f"b: {'Greetings'}") # String literal
-print(f"c: {False}") # Constant literal
-print(f"d: {myname}") # String variable
-print(f"e: {myage}") # numeric variable
+print(f"a: {21}")  # numeric literal
+print(f"b: {'Greetings'}")  # String literal
+print(f"c: {False}")  # Constant literal
+print(f"d: {myname}")  # String variable
+print(f"e: {myage}")  # numeric variable
 
-print((3-2+1),(4-3+2))
-print((3*2+1),(4*3+2))
+# Arithmetic operations
+print((3 - 2 + 1), (4 - 3 + 2))
+print((3 * 2 + 1), (4 * 3 + 2))
 
+# String comparison
 print(f"is 'trey'==='Trey Zobel'? {'trey'=='Trey Zobell'}")
 print(f"is 'trey'==='trey'? {'trey'=='trey'}")
 
-
-#equality
+# Equality and assignment examples
 name = "trey"
 print("assignment: ", name)
-print("equality: ",name == "trey")
+print("equality: ", name == "trey")
 
-#comparison
-print("\n", "compare","bb" < "c")
-print("compare", 10<100)
+# Comparison examples
+print("\n", "compare", "bb" < "c")
+print("compare", 10 < 100)
 
-#comparison Operator
+# Comparison operators
 a = 2
 b = 3
 print(f"comparison: {a} is greater than {b}" if a > b else "")
@@ -103,14 +104,15 @@ print(f"comparison: {a} is less than {b}" if a < b else "")
 print(f"comparison: {a} is greater than or equal to {b}" if a >= b else "")
 print(f"comparison: {a} is less than or equal to {b}" if a <= b else "")
 
-#if statement
+# If statement example
 bankaccount_balance = 100
-if bankaccount_balance <500:
-  money = 2000
-  bankaccount_balance += money
+if bankaccount_balance < 500:
+    money = 2000
+    bankaccount_balance += money
 else:
     print("balance is less than or equal to 500")
 
+# If-elif-else example
 bank_balance = 400
 savings = 150
 
@@ -124,22 +126,21 @@ else:
     savings += 70
     bank_balance -= 70
 
-#to print and see results
+# Print the results
 print(bank_balance)
 print(savings)
 
-#The Ternary Operator
+# Ternary Operator example
 gas = 1
 print("Fill gas tank now" if gas <= 1 else "There is enough gas in the tank")
 
-#while Loop
+# While loop example
 fuel = 10
 while fuel > 1:
-  # keep on driving
-  print("You have enough Petrol")
-  fuel -= 1
+    print("You have enough Petrol")
+    fuel -= 1
 
-# for loop
+# For loop examples
 books = ['Lord of the Rings', 'Harry Potter', 'Magic Tree House']
 for book in books:
     print(f"book: {book}")
@@ -147,7 +148,7 @@ for book in books:
 for i in range(5):
     print(f'i: {i}')
 
-#for Loop Break and continue example:
+# For loop with break and continue
 # Example using 'break'
 for count in range(15):
     print(f"{count} times 17 is {count * 17}")
@@ -159,4 +160,3 @@ for count in range(15):
     if count == 8:
         continue  # skips 8 times 17 but continues with the rest of the multiplications
     print(f"{count} times 17 is {count * 17}")
-
